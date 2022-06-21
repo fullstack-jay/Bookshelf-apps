@@ -73,32 +73,32 @@ button {
     display    : flex;
 }
 
-.head_bar .icon .G {
+.head_bar .icon .letter-G {
     color     : #4285F4;
     background: var(--white);
 }
 
-.head_bar .icon .O {
+.head_bar .icon .letter-O {
     color     : #EA4335;
     background: var(--white);
 }
 
-.head_bar .icon .O_Y {
+.head_bar .icon .letter-O_Y {
     color     : #FBBC05;
     background: var(--white);
 }
 
-.head_bar .icon .B {
+.head_bar .icon .letter-B {
     color     : #4285F4;
     background: var(--white);
 }
 
-.head_bar .icon .K {
+.head_bar .icon .letter-K {
     color     : #34A853;
     background: var(--white);
 }
 
-.head_bar .icon .S {
+.head_bar .icon .letter-S {
     color     : #EA4335;
     background: var(--white);
 }
