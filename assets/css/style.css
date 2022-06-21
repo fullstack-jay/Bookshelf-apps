@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #5F30E2;
+    --danger-color : red;
+    --black        : #000;
+    --white        : #fff;
+    --fm-raleway   : 'Raleway', serif;
+    --fm-roboto    : 'Roboto', sans-serif;
+    --box-shadow   : 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: var(--fm-raleway);
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+}
+
+body,
+input,
+button {
+    font-family: var(--fm-raleway);
+}
+
+input,
+button {
+    font-size: 16px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    border    : 0.1rem solid #444;
+    height    : 4rem;
+    width     : 4rem;
+    color     : #444;
+    background: var(--white);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: #444;
+    color     : var(--white);
+}
+
+.head_bar {
+    padding         : 12px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    background-color: var(--primary-color);
+    color           : var(--white);
+    top             : 0;
+}
+
+.head_bar .icon {
+    font-size  : 2.3rem;
+    font-family: var(--fm-roboto);
+    display    : flex;
+}
+
+.head_bar .icon .G {
+    color     : #4285F4;
+    background: var(--white);
+}
+
+.head_bar .icon .O {
+    color     : #EA4335;
+    background: var(--white);
+}
+
+.head_bar .icon .O_Y {
+    color     : #FBBC05;
+    background: var(--white);
+}
+
+.head_bar .icon .B {
+    color     : #4285F4;
+    background: var(--white);
+}
+
+.head_bar .icon .K {
+    color     : #34A853;
+    background: var(--white);
+}
+
+.head_bar .icon .S {
+    color     : #EA4335;
+    background: var(--white);
+}
+
+.home {
+    background         : url(../img/banner-bg.jpg) no-repeat;
+    background-size    : cover;
+    background-position: center;
+}
+
+.home .row {
+    display    : flex;
+    align-items: center;
+    flex-wrap  : wrap;
+    gap        : 1.2rem;
+}
+
+.home .row .books-slider {
+    flex      : 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home .row .books-slider a img {
+    height: 17rem;
+}
+
+.home .row .books-slider a:hover img {
+    transform: scale(0.9);
+}
+
+.home .row .books-slider .stand {
+    width     : 80%;
+    margin-top: -2rem;
+}
+
+main {
+    max-width: 1024px;
+    width    : 100%;
+    margin   : 0 auto;
+    padding  : 16px;
+}
+
+.input-section,
+.search_section,
+.book_shelf {
+    width        : 1024px;
+    margin       : 16px;
+    padding      : 16px;
+    flex-grow    : 1;
+    border-radius: 8px;
+    background   : #F8F9FA;
+    height       : fit-content;
+}
+
+.shadow {
+    box-shadow: var(--box-shadow);
+}
+
+.input-section h2 {
+    text-align: center;
+}
+
+.input-section form .input {
+    margin: 10px 0;
+}
+
+.input-section form .input input[type="text"],
+input[type="number"],
+input[type="search"] {
+    font-family  : var(--fm-raleway);
+    background   : #f5f1ff;
+    border-radius: 8px;
+    border       : 2px solid #9475ea;
+    padding      : 16px;
+    margin-bottom: 8px;
+    font-size    : 18px;
+}
+
+.input-section form button {
+    color        : var(--black);
+    border       : 2px solid var(--primary-color);
+    border-radius: 5px;
+    display      : block;
+    width        : 100%;
+    padding      : 12px 24px;
+    cursor       : pointer;
+}
+
+.input-section form button:hover {
+    background-color: var(--primary-color);
+    color           : var(--white);
+}
+
+.input-section form button span {
+    font-weight: bold;
+}
+
+.input-section form .input input {
+    display      : block;
+    width        : 100%;
+    padding      : 8px;
+    border-radius: 5px;
+}
+
+.input-section form .input_inline {
+    margin     : 12px 0;
+    display    : flex;
+    align-items: center;
+}
+
+.input-section form .input_inline label {
+    margin-right: 10px;
+}
+
+.search_section h2 {
+    text-align: center;
+    font-size : 18px;
+}
+
+.search_section form .input {
+    margin: 8px 0;
+}
+
+.search_section form .input input {
+    display      : block;
+    width        : 100%;
+    padding      : 12px 20px 12px 40px;
+    border-radius: 5px;
+}
+
+.search_section form button:hover {
+    background-color: var(--primary-color);
+    color           : var(--white);
+}
+
+.book_shelf .book_list .book_item {
+    padding      : 12px 24px 12px 24px;
+    background   : var(--white);
+    margin-top   : 16px;
+    border-radius: 5px;
+}
+
+.book_shelf .book_list .book_item .action button {
+    border       : 0;
+    padding      : 12px 24px 12px 24px;
+    background   : white;
+    margin-top   : 16px;
+    border-radius: 5px;
+    cursor       : pointer;
+    align-items  : center;
+    margin       : 2px;
+}
+
+.book_shelf .book_list .book_item .action .blue {
+    background-color: var(--primary-color);
+    color           : var(--white);
+}
+
+.book_shelf .book_list .book_item .action .red {
+    background-color: var(--danger-color);
+    color           : var(--white);
+    margin-top      : 1.5rem;
+}
+
+footer {
+    padding         : 28px;
+    color           : var(--white);
+    background-color: var(--primary-color);
+    text-align      : center;
+    font-weight     : bold;
+    height          : 75px;
+}
+
+footer>p {
+    color: var(--white);
+}
+
+footer>p>span#tahunFooter {
+    color: var(--white);
+}
